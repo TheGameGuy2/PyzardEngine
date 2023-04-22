@@ -1,0 +1,46 @@
+Welcome to the documentation of the Pyzard Engine!
+
+This file will explain the editor application and how to use it.
+
+----Setup----
+Before starting the editor, run the setup.py file through your console using python.
+Don't have Python installed? Download it at:  https://www.python.org/
+(Engine was written and tested on python version 3.6 32bit, although newer versions should work as well)
+
+---Getting started---
+After running setup, start PyzardEngine.exe, a Window will pop up asking for a scene, click on
+'New Scene' if you haven't created one already, and select a name and then a folder in which your project
+will be saved.
+
+---The Editor---
+After creating/selecting a scene, the editor will start.
+
+-The Object List
+	The object list is on the box on the left side of the window, all Game Objects
+	in your current scene will be displayed there.
+	Some values are editable in the editor and can be simply edited by inputting a new value and clicking on the 'save' button.
+
+-The Info panel
+	 The info panel is the box on the right side of the window, once you select an Object in
+	 the Object list all of its components and some other data will be shown there.
+
+-The Scene preview
+	the scene preview shows you 'game world' all objects with a Sprite component will be
+	displayed at the right position, but on different render layers.
+
+-The file explorer
+	The file explorer shows all python files in your project directory.
+
+---Adding an Object---
+To add an object, go to the menu on top, select 'Game Objects' and click on 'Add' (Game Objects > Add)
+
+---Saving the Scene---
+To save the scene, go to Scene > save
+
+
+---Adding script---
+to add a script, go to Options > Add script.
+This will add a script to your project with all imports that you will need for your game logic.
+
+
+
