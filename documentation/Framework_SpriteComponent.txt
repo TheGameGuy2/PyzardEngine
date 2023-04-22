@@ -1,0 +1,26 @@
+---SpriteComponent(Component)---
+!inherits name,parent_object from Component. See "Framework_Component" for more info.
+
+__init__(parent_object,sprite,custom_init=[False]) {custom init is used to initialize the sprite at runtime. Every sprite created before runtime is going to be auto initialized and does not need custom init.}
+
+#custom_init[use_ci,current_renderer,current_camera]
+
+
+-Attributes
+
+ .current_renderer:None (the current renderer of the scene. is set later in .on_load() )
+
+ .sprite_location:str (the path to the sprite the component should use)
+
+-Methods
+
+ .on_load(use_sdl2,current_renderer,cur_camera) -> None (sets everything up for rendering. !engine use only)
+
+ .on_update() -> None (renders the sprite at parent object position - camera.position and with parent object scale - camera.scale)
+
+ .on_save() -> None  (sets everything that isnt saveable with pickle to None. ! engine use only)
+
+ .load_sprite() -> pygame.Surface (only loads sprite using pygame.image.load(sprite_name))
+
+ .on_custom_load() -> None (loads renderer. needs sprite to be loaded before)
+

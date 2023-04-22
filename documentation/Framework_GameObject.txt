@@ -1,0 +1,26 @@
+---GameObject---
+
+ -Attributes
+
+ .name:str (is used as an id to get the game object from the scene.)
+
+ .tags:list (an empty list,engine does not use it. use it as you wish.)
+
+ .components:dict (stores component_name:component_class, each component in this dict gets updated)
+  
+ .position:pygame.math.Vector2() (the position of the game object, components collider and Sprite use it)
+
+ .scale:pygame.math.Vector2() (the size of the game object. Sprite component uses it to scale the sprite.)
+ 
+
+ -Methods
+
+ .tech_update() -> None (updates all components)
+ 
+ .destroy() -> None (Deletes the game object. [del gameobject])
+
+ .add_component(init_component) -> None (Adds the component class to components, requires initialized component. [add_component(SpriteComponent(object,"sprite.png")] ) 
+
+ .get_component(component_name) -> Component or False (Returns the component if component in components, else returns False)
+ 
+ 

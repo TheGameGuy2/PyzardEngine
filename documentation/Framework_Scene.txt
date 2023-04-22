@@ -1,0 +1,21 @@
+---Scene---
+
+-Attributes
+
+ .name:str (name of the scene, when scene gets saved th file name will be scenename.gscn .)
+ 
+ .game_objects:dict ( holds all possible game objects [objectname:object]. ! GameObject has to be in update_objects to get updated, objects in game_objects are not getting updated.)
+
+ .update_objects:dict ( [priority:[object,object2] is used to regulate the order in wich the gameobjects are updated, example : {0:[new_object,duck_object],1:[object2]} 0 will be updated first, then goes on to 1)
+ 
+ .background_color:tuple (background color of the scene default set to (0,0,0,0). ! uses rgba (r,g,b,a) )
+
+-Methods
+
+ .add_object(object) -> None (adds the object to all game_objects. game_objects[object.name]=object )
+
+ .set_priority(object_name,priority) -> None (gets object from game_objects and appends it to update_objects list under given priority. )
+
+ .get_object(object_name) -> GameObject (returns game object with the given name from game_objects)
+
+  

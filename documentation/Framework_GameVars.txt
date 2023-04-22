@@ -1,0 +1,10 @@
+---GameVars---
+
+is used for managing framerate, window size, delta time and pygame events. ! Do not create instance
+
+-Attributes
+ .framerate:int (the game's frame rate)
+ .window_height:int (Game window height)
+ .window_width:int (Game window width)
+ .delta_time:float (the time passed between each frame)
+ .events:list (all occuring pygame events)

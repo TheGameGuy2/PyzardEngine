@@ -1,0 +1,6 @@
+----blueprint.py----
+
+The code blueprint wich imports everything you might need.
+This is the script you usualy would write your game's logic in.
+See example game for more info.
+ 

@@ -1,0 +1,16 @@
+---ColliderComponent---
+!inherits name,parent_object from Component. See "Framework_Component" for more info.
+
+
+-Attributes
+
+ .size:Vector2 (size of detection area)
+ .position_offset:Vector2(0,0) (position offset from parent object)
+ .old_position:Vector2 (used for checking if has changed position. !Engine use)
+ .box:Collider (the actua collider used for collisions. should not be modified. only in edge cases)
+
+-Methods
+
+ .on_update() -> None (updates the colliders position)
+ .check_side_collision(other:ColliderComponent) -> dict{"up":0,"down":0,"left":0,"right":0} (checks side on wich other collider intersects)
+ .check_collision(other:ColliderComponent) -> bool (checks only if other intersects)

@@ -1,0 +1,16 @@
+---Component--- 
+! template for all components.
+ 
+-Attributes
+
+ .name:str (name of the component. used as id)
+
+ .parent_object:GameObject (The game object this component belongs to)
+
+-Methods
+ 
+ .on_update() -> None (is called every frame)
+
+ .on_save() -> None (is called on scene save)
+
+

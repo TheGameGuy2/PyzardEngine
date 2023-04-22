@@ -1,0 +1,4 @@
+----Assemble.py----
+
+This script imports everything necessary for your game to run.
+All your scripts should be imported before GameApp.start()

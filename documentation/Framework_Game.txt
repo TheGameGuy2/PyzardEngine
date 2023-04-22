@@ -1,0 +1,10 @@
+---Game---
+
+-Attributes
+ .scene:Scene (the current game scene)
+ .renderer: pygame._sdl2.Renderer (the current renderer)
+ .camera:Camera (current Camera)
+
+-Methods
+
+ .start_app() -> None (starts the game)
